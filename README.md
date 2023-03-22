@@ -4,7 +4,7 @@ This is a server(on nextjs) which covnerts dmeditor's data into html, inlcuding 
 npm run dev
 
 ## Convert
-visit http://localhost:3000/dmeditor, POST dmeditor data. eg.
+Send a post request to http://localhost:3000/dmeditor, where body is dmeditor data. eg.
 ```json
 [{
 		"common": {
