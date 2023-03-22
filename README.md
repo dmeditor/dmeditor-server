@@ -1,9 +1,9 @@
 This is a server(on nextjs) which covnerts dmeditor's data into html, inlcuding event like(tab).
 
-## Run
+### Run
 npm run dev
 
-## Convert
+### Convert
 Send a post request to http://localhost:3000/dmeditor, where body is dmeditor data. eg.
 ```json
 [{
@@ -27,5 +27,5 @@ Send a post request to http://localhost:3000/dmeditor, where body is dmeditor da
 ]
 ```
 
-## Embed in project like PHP/.NET/etc
+### Embed in project like PHP/.NET/etc
 Embed the request result in html(remember to host .next/static to be \_next/static in production)
