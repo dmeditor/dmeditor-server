@@ -28,3 +28,4 @@ visit http://localhost:3000/dmeditor, POST dmeditor data. eg.
 ```
 
 ## Embed in project like PHP/.NET/etc
+Embed the request result in html(remember to host .next/static to be \_next/static in production)
