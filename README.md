@@ -1,4 +1,6 @@
-This is a server(on nextjs) which covnerts dmeditor's data into html, inlcuding event like(tab).
+DMEditor Server
+========
+A nextjs project which converts dmeditor data to html.
 
 ### Dev
 ```
