@@ -1,7 +1,15 @@
 This is a server(on nextjs) which covnerts dmeditor's data into html, inlcuding event like(tab).
 
-### Run
+### Dev
+```
 npm run dev
+```
+
+### Deploy
+```
+npm run build
+npm start
+```
 
 ### Convert
 Send a post request to http://localhost:3000/dmeditor, where body is dmeditor data. eg.
