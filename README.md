@@ -1,6 +1,6 @@
 DMEditor Server
 ========
-A nextjs project which converts dmeditor data to html.
+A nextjs project which converts dmeditor data to html. It's typical to run this as an internal service.
 
 ### Dev
 ```
