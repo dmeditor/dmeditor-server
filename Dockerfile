@@ -35,8 +35,8 @@ COPY --from=builder --chown=dmeditoruser:dmeditorgroup /app/.next/static ./.next
 
 USER dmeditoruser
 
-EXPOSE 3000
+EXPOSE 3006
 
-ENV PORT 3000
+ENV PORT 3006
 
 CMD ["node", "server.js"]
