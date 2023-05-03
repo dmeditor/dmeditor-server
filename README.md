@@ -8,7 +8,7 @@ npm run dev
 ```
 
 ### Deploy
-Deploy traditionally
+Deploy in traditional way
 ```
 npm run build
 npm start
