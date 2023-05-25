@@ -7,7 +7,7 @@ export default function DMEditor(props:{dmeData:any}) {
   return (
     <>     
       <main>
-        <DMEditorView data={props.dmeData} fileUrl={(path:any)=>'/var/'+path} imageUrl={(path:any)=>'/var/'+path} />
+        <DMEditorView data={props.dmeData} getFileUrl={(path:any)=>'/var/'+path} getImageUrl={(path:any)=>'/var/'+path} />
       </main>
     </>
   )
