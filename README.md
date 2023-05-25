@@ -8,9 +8,17 @@ npm run dev
 ```
 
 ### Deploy
+Deploy in traditional way
 ```
 npm run build
 npm start
+```
+
+Deploy to Docker
+```
+docker build --tag dmeditor-server .
+
+# When running, explose 3006 port
 ```
 
 ### Convert
