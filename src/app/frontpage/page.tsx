@@ -1,14 +1,15 @@
 "use client";
 
+import { DMEditorView } from "dmeditor";
 // import { DMEditorView } from "dmeditor";
 import React from "react";
-// import "../../dmeditor_init";
+import "../../dmeditor_init";
 
 const EditPage = () => {
   return (
     <div>
       <main>DM Editor view sample</main>
-      {/* <DMEditorView
+      <DMEditorView
         data={[
           {
             data: {
@@ -22,7 +23,7 @@ const EditPage = () => {
             type: "heading",
           },
         ]}
-      /> */}
+      />
     </div>
   );
 };
