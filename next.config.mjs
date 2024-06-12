@@ -69,13 +69,16 @@ const nextConfig = {
       );
       config.module.rules.push({
         test: /\.(js|jsx|ts|tsx)$/,
-        include: path.resolve(__dirname, "./node_modules/dmeditor/src/index.ts"),
+        include: path.resolve(
+          __dirname,
+          "./node_modules/dmeditor/src/index.ts"
+        ),
         use: {
           loader: "babel-loader",
           options: {
             presets: ["@babel/preset-env", "@babel/preset-react"],
           },
-        }
+        },
       });
     } else {
       // For client-side code, use the ESM version
@@ -91,13 +94,16 @@ const nextConfig = {
       );
       config.module.rules.push({
         test: /\.(js|jsx|ts|tsx)$/,
-        include: path.resolve(__dirname, "./node_modules/dmeditor/src/index.ts"),
+        include: path.resolve(
+          __dirname,
+          "./node_modules/dmeditor/src/index.ts"
+        ),
         use: {
           loader: "babel-loader",
           options: {
             presets: ["@babel/preset-env", "@babel/preset-react"],
           },
-        }
+        },
       });
     }
 

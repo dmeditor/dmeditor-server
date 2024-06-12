@@ -1,8 +1,8 @@
 "use client";
 import { Inter } from "next/font/google";
 // import { Button } from "antd";
-import React, { useState } from "react";
-import { DMEditorView, registerDefaultWidgets } from "dmeditor";
+import React, { useEffect, useState } from "react";
+import { DMEditorView, registerDefaultWidgets, MiniText } from "dmeditor";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,12 +23,24 @@ export default function Home() {
       type: "heading",
     },
   ];
+  const [htmlString, setHtmlString] = useState<string>("");
+
+  useEffect(() => {
+    const fetchHtml = async () => {
+      const response = await fetch("/api/render");
+      const data = await response.json();
+      console.log("wing", data);
+      setHtmlString(data.html);
+    };
+    fetchHtml();
+  }, []);
 
   return (
     <>
       <main className="flex min-h-screen flex-col items-center justify-between p-24">
         {/* <Button>{value}</Button> */}
-        <DMEditorView data={data} />
+        {/* <DMEditorView data={data} /> */}
+        <div dangerouslySetInnerHTML={{ __html: htmlString }} />
       </main>
     </>
   );
