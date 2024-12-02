@@ -1,9 +1,10 @@
 "use client";
 
-import { DMEditorView } from "dmeditor";
-// import { DMEditorView } from "dmeditor";
+import { DMEditorView, registerDefaultWidgets } from "dmeditor";
 import React from "react";
-import "../../dmeditor_init";
+// import "../../dmeditor_init";
+
+registerDefaultWidgets();
 
 const EditPage = () => {
   return (
