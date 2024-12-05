@@ -1,8 +1,9 @@
-DMEditor Server
-========
-A nextjs project which uses DM Editor.
+# DMEditor Server
+
+A simple nextjs project which uses DM Editor on SSR.
 
 ### Dev
+
 ```
 npm run dev
 ```
