@@ -5,6 +5,7 @@ A simple nextjs project which uses DM Editor on SSR.
 ### Dev
 
 ```
+npm install
 npm run dev
 ```
 
